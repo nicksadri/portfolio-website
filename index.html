@@ -4,27 +4,33 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>portfolio!</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
         <!-- start favicon setup -->
         <link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png">
         <link rel="icon" type="image/x-icon" href="images/favicons/favicon.ico">
-        <!-- end favicon setup -->
-        <link rel="stylesheet" href="styles.css">
-        <script src="script.js"></script>
+        <!-- end -->
         <!-- start font import -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-        <!-- end font import -->
+        <!-- end -->
+        <!-- link font awesome-->
+        <script src="https://kit.fontawesome.com/df8d261e64.js" crossorigin="anonymous"></script>
+        <!-- end -->
     </head>
     <body>
         <nav>
             <a id="logo" href="#home"><img src="images/funko_pop_logo.png" alt="" width="75" height="75"></a>
-            <ul id="nav-list">
+            <ul id="nav-list" visibility="false" transitioning="false">
                 <li><a href="#about">about</a></li>
                 <li><a href="#experience">experience</a></li>
                 <li><a href="#projects">projects</a></li>
                 <li><a href="#skills">skills</a></li>
             </ul>
+            <div class="hamburger">
+                <i class="fa-solid fa-bars fa-xl"></i>
+            </div>
         </nav>
     </body>
 </html>

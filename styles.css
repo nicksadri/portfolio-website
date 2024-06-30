@@ -1,3 +1,5 @@
+/* general styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +11,8 @@ body {
     background-color: #f2f3ff;
     color: #000000;
 }
+
+/* normal nav bar */
 
 nav {
     display: flex;
@@ -25,15 +29,62 @@ nav {
     margin: 0;
 }
 
-#logo {
-    padding-left: 3rem;
+#nav-list a {
+    color: #000000;
+    text-decoration: none;
+}
+
+#nav-list a:hover {
+    color: #737ef4;
+    text-shadow: #cfd2f1 1px 1px;
 }
 
 #nav-list li {
     padding-right: 4rem;
 }
 
-#nav-list a {
-    color: #000000;
-    text-decoration: none;
+#logo {
+    padding-left: 3rem;
+}
+
+/* compressed nav bar */
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    .hamburger {
+        display: block;
+        padding-right: 4rem;
+    }
+
+    #nav-list {
+        opacity: 0;
+        pointer-events: none;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 80px;
+        right: 4rem;
+        background-color: rgb(207, 210, 241, 0.5);
+        border-radius: 15px;
+    }
+
+    #nav-list[visibility="true"] {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    #nav-list[transitioning="true"] {
+        transition: opacity 500ms ease;
+    }
+
+    #nav-list li {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        padding: 15px 50px;
+    }
 }
