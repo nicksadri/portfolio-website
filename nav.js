@@ -1,3 +1,5 @@
+document.documentElement.style.setProperty('--nav-height', document.getElementById("nav-bar").offsetHeight);
+
 // handle dropdown hamburger in compressed navbar
 
 const hamburger = document.querySelector(".hamburger");
