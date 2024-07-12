@@ -127,6 +127,18 @@ nav {
     transition: opacity 750ms ease;
 }
 
+#name {
+    background: linear-gradient(92.74deg, #0670a5 1.64%, #2b449e 50.4%, #8e1ae1 98.14%), linear-gradient(0deg, #000, #000);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: transform 500ms ease;
+}
+
+#name:hover {
+    transform: translateY(-10px);
+}
+
 #hero-image {
     flex: 1;
     margin-right: 4rem;
